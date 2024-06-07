@@ -9,6 +9,9 @@
    font-style: normal;
 }
 
+body {
+   min-width: 390px;
+}
 
 
 .my-bg {
@@ -52,8 +55,8 @@
 .btn-tuvan {
    background-color: goldenrod;
    border-radius: 15px;
-   padding: 5px;
-   color: #10473F;
+   padding: 5px 30px;
+   color: black;
    border: 1px solid black;
    margin-right: 100px;
 }
@@ -69,6 +72,58 @@ nav div button.btn-tuvan:hover {
 
 section button.btn-tuvan {
    animation: bounce 1s ease-in-out infinite;
+}
+
+.why-section {
+   margin-left: 115px;
+}
+
+.tieu-de-ly-do,
+.nd-ly-do {
+   text-align: right;
+   transform: translateX(57px);
+}
+
+.tieu-de-ly-do2,
+.nd-ly-do2 {
+   text-align: right;
+}
+
+.tieu-de-ly-do3,
+.nd-ly-do3 {
+   text-align: left;
+   transform: translateX(-57px);
+}
+
+.tieu-de-ly-do4,
+.nd-ly-do4 {
+   text-align: left;
+}
+
+.tieu-de-ly-do,
+.tieu-de-ly-do2,
+.tieu-de-ly-do3,
+.tieu-de-ly-do4 {
+
+   color: #EFA700;
+   font-family: "Dancing Script", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+}
+
+.check-icon {
+   transform: scale(1.7);
+   padding: 0 15px;
+}
+
+.my-img-ly-do {
+   width: 200px;
+   margin: 97px 10px;
+   transform: translateX(-21px);
+}
+
+.obligate {
+   color: red;
 }
 
 @keyframes bounce {
@@ -89,6 +144,46 @@ section button.btn-tuvan {
    background-color: #0C403C;
 }
 
+.star-rating {
+   color: #FFD700;
+   /* Màu vàng cho sao */
+}
+
+.my-card-1:hover,
+.my-card-2:hover,
+.my-card-3:hover,
+.my-card-4:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+   box-shadow: gray 0 5px 15px 0;
+}
+
+.my-cards {
+   position: relative;
+}
+
+.old-price {
+   color: red;
+   text-decoration: line-through;
+}
+
+.card-footer {
+   text-align: center;
+}
+
+.btn-mua {
+   position: absolute;
+   background-color: #FFC107;
+   color: white;
+   border: none;
+   font-size: 24px;
+   top: 106px;
+   left: 42px;
+   padding: 0px 10px;
+   border-radius: 10px;
+   z-index: -1;
+}
+
 .tieu-de-1 {
    color: #5D4037;
    font-family: "Dancing Script", cursive;
@@ -100,6 +195,20 @@ section button.btn-tuvan {
    padding-left: 350px;
 }
 
+.my-card-1,
+.my-card-2,
+.my-card-3,
+.my-card-4 {
+   width: 250px;
+   height: 365px;
+   float: left;
+   margin: 10px 15px;
+}
+
+.card-img-top {
+   height: 140px;
+}
+
 .tieu-de-2 {
    color: #FFF5E4;
    font-family: "Dancing Script", cursive;
@@ -108,12 +217,63 @@ section button.btn-tuvan {
    font-style: normal;
    font-size: 51px;
    padding-top: 70px;
-   padding-left: 350px;
+   padding-bottom: 70px;
+   padding-left: 550px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
    background-color: #2C3E50;
+}
+
+.kh {
+   background-color: #0C403C;
+   height: 705px;
+}
+
+.hoa {
+   width: 200px;
+   padding-top: 15px;
+   float: left;
+}
+
+.tieu-de-cam-nhan {
+   padding: 10px;
+   color: goldenrod;
+   font-family: "Dancing Script", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 71px;
+   padding-top: 30px;
+   padding-bottom: 70px;
+   padding-left: 250px;
+}
+
+.img-ceo {
+   width: 200px;
+   border-radius: 50%;
+   border: 10px solid #ffffff;
+   margin-left: 225px;
+   margin-right: 20px;
+   margin-top: 25px;
+   float: left;
+}
+
+.cau-chuyen {
+   color: #F5EDCE;
+}
+
+.nd-cam-nhan {
+   width: 1350px;
+}
+
+p.nd-cam-nhan {
+   font-weight: 300;
+}
+
+.tieu-de-cau-chuyen {
+   font-size: 50px;
 }
 
 .loai-1 {
@@ -122,14 +282,112 @@ section button.btn-tuvan {
 }
 
 .loai-2 {
-   background-color: #5D4037;
    height: 705px;
+   background-color: #006989;
+   background-image: url(images/bg1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.loai-2 .tieu-de-2 {
+   font-size: 51px;
 }
 
 .loai-3 {
+   height: 705px;
+   background-color: #006989;
+   background-image: url(images/bg5.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.loai-4 {
+   height: 705px;
+   background-color: #006989;
+   background-image: url(images/bg1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.loai-5 {
+   height: 705px;
+   background-color: #006989;
+   background-image: url(images/bg5.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.loai-6 {
+   height: 705px;
+   background-color: #006989;
+   background-image: url(images/bg1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.ly-do-nen-chon {
    background-color: #FFF5E4;
    height: 705px;
-   display: none;
+}
+
+.tieu-de-3,
+.tieu-de-2 {
+   color: #EE9322;
+   font-family: "Dancing Script", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 71px;
+   padding-top: 70px;
+   padding-bottom: 70px;
+   padding-left: 550px;
+}
+
+.loai-3 div.container,
+.loai-4 div.container,
+.loai-5 div.container,
+.loai-6 div.container {
+   margin: auto 80px;
+}
+
+.img-sp1 {
+   height: 400px;
+   width: 600px;
+   object-fit: cover;
+   margin-left: 200px;
+   border-radius: 5%;
+}
+
+.nd-nguyen-lieu {
+   color: #EE9322;
+}
+
+.pre {
+   text-decoration: line-through;
+   color: red;
+}
+
+.price {
+   color: #EE9322;
+}
+
+.btn-mua-ngay {
+   background-color: #E88D67;
+   padding: 5px 20px;
+   border-radius: 20px;
+   border: none;
+}
+
+.tieu-de-4 {
+   color: #5D4037;
+   font-family: "Dancing Script", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 51px;
+   padding-top: 70px;
+   padding-bottom: 70px;
+   padding-left: 286px;
 }
 
 .my-banner-1,
@@ -153,11 +411,12 @@ section button.btn-tuvan {
 .back-to-top {
    background-color: gray;
    border-radius: 50%;
-   transform: scale(0.4);
+   transform: scale(0.3);
+   padding: 20px;
    position: fixed;
-   bottom: 20px;
+   bottom: -25px;
    border: none;
-   right: 5px;
+   right: -30px;
 }
 
 .my-img-4 {
@@ -175,10 +434,6 @@ section button.btn-tuvan {
    font-weight: 700;
    font-style: normal;
    font-size: 51px;
-}
-
-.my-icon {
-   transform: scale(0.3);
 }
 
 .my-footer {
@@ -199,14 +454,14 @@ h6 {
 }
 
 .big-footer {
-   background-color: #041715;
+   background-color: aliceblue;
 }
 
 .copyR {
    text-align: center;
    background-color: #0C403C;
    padding: 15px 0 10px;
-   color: #E0E0E0;
+   color: goldenrod;
 }
 
 .my-footer p {
@@ -215,7 +470,41 @@ h6 {
    padding-left: 95px;
 }
 
+.modal-content {
+   height: 490px;
+   width: 440px;
+}
+
+
+.modal-header {
+   color: goldenrod;
+}
+
+.modal-title {
+   margin-left: 140px;
+   font-family: "Dancing Script", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+}
+
+.mybbtn {
+   margin: 10px auto;
+   padding: 7px 20px;
+}
+
+.my-footer,
+.copyR {
+   background-image: url(images/bg2-2.jpg);
+   color: #F5EDCE;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 576px) {
+   .btn-tuvan {
+      margin-right: 10px;
+   }
+
    .home {
       margin-top: 59px;
       height: 1009px;
@@ -237,5 +526,150 @@ h6 {
    .ten-cty {
       font-size: 18px;
       margin: 0 0 0 35px;
+   }
+
+   .long-den-2 {
+      display: none;
+   }
+
+   .tieu-de-1 {
+      width: 401px;
+      padding: 30px 70px;
+   }
+
+   .my-banner-1,
+   .my-banner-2,
+   .my-banner-3 {
+      transform: scale(1);
+   }
+
+   .carousel-control-prev-icon,
+   .carousel-control-next-icon {
+      background-color: #2C3E50;
+      transform: translateY(-29px);
+   }
+
+   .loai-1 {
+      height: 386px;
+   }
+
+   .tieu-de-2,
+   .tieu-de-3 {
+      padding: 60px 40px 40px;
+      width: 440px;
+      font-size: 40px !important;
+   }
+
+   .loai-2 {
+      height: 1753px;
+   }
+
+   .my-card-1,
+   .my-card-2,
+   .my-card-3,
+   .my-card-4 {
+      margin-left: 75px;
+   }
+
+   .loai-3,
+   .loai-4,
+   .loai-5,
+   .loai-6 {
+      height: 984px;
+      background-size: 1px 1px;
+   }
+
+   .loai-3,
+   .loai-5 {
+      background-color: #F5EDCE;
+   }
+
+   .loai-4,
+   .loai-6 {
+      background-color: #f5dcd2;
+   }
+
+   .img-sp1 {
+      height: 380px;
+      width: 272px;
+      object-fit: cover;
+      margin: 0 -43px 20px;
+      border-radius: 5%;
+   }
+
+   .nd-sp {
+      margin-left: -30px;
+   }
+
+   .btn-mua-ngay {
+      margin: 40px 60px;
+   }
+
+   .ly-do-nen-chon {
+      height: 1480px;
+   }
+
+   .tieu-de-4,
+   .tieu-de-cam-nhan {
+      font-size: 33px;
+      text-align: center;
+      padding-left: 8px;
+   }
+
+   .tieu-de-ly-do,
+   .nd-ly-do {
+      transform: translateX(-133px);
+   }
+
+   .tieu-de-ly-do2,
+   .nd-ly-do2 {
+      transform: translateX(-133px);
+   }
+
+   .tieu-de-ly-do3,
+   .nd-ly-do3 {
+      transform: translateX(-96px);
+   }
+
+   .tieu-de-ly-do4,
+   .nd-ly-do4 {
+      transform: translateX(-96px);
+   }
+
+   .my-img-ly-do {
+      transform: translateX(-50px) scale(1.5);
+   }
+
+   .kh {
+      height: 887px;
+   }
+
+   .hoa {
+      display: none;
+   }
+
+   .img-ceo {
+      float: none;
+      margin-left: 100px;
+      margin-top: -40px;
+      margin-bottom: 20px;
+   }
+
+   .tieu-de-cau-chuyen {
+      font-size: 30px;
+      margin-left: 55px;
+   }
+
+   .nd-cam-nhan {
+      width: 350px;
+   }
+
+   h5.nd-cam-nhan {
+      margin-left: 75px;
+   }
+
+   p.nd-cam-nhan {
+      margin-left: 25px;
+      text-align: justify;
    }
 }

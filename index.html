@@ -5,17 +5,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fresh Rice Paper - Order Now!</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+
+    <!-- jQuery UI -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
 </head>
 
 <body>
+    <form class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Nhận Tư Vấn</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control mycontent" id="email" placeholder="Enter FirstName"
+                            name="ho">
+                        <label for="email">Họ <span class="obligate">*</span></label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control mycontent" id="pwd" placeholder="Enter LastName"
+                            name="ten">
+                        <label for="pwd">Tên <span class="obligate">*</span></label>
+                    </div>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="number" class="form-control mycontent" id="email" placeholder="Enter Phone Number"
+                            name="sdt">
+                        <label for="email">SĐT <span class="obligate">*</span></label>
+                    </div>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control mycontent" id="ctent" placeholder="Enter "
+                            name="noidung">
+                        <label for="ctent">Nội dung bạn muốn nhắn nhủ đến chúng tôi</label>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" id="submit-form" class="btn btn-success mybbtn">Tư Vấn Cho Tôi</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
     <header>
         <nav class="navbar navbar-expand-sm my-bg navbar-dark m-0 p-0 fw-bold fixed-top">
             <div class="container-fluid d-flex">
@@ -30,7 +88,7 @@
                             <a class="nav-link" href="">Các Loại Bánh Tráng</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Khuyến Mãi</a>
+                            <a class="nav-link" href="">Cảm Nhận Của Khách Hàng</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Liên Hệ</a>
@@ -38,7 +96,7 @@
                     </ul>
                 </div>
                 <div>
-                    <button class="btn-tuvan">Nhận Tư Vấn</button>
+                    <button class="btn-tuvan" data-bs-toggle="modal" data-bs-target="#myModal">Nhận Tư Vấn</button>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
@@ -58,7 +116,7 @@
                 <p>Bánh Tráng</p>
                 <p class="p-font">Lựa chọn quà tặng ý nghĩa</p>
                 <p class="p-font">Của những doanh nghiệp hàng đầu</p>
-                <button class="btn-tuvan m-0">Đặt Hàng Ngay</button>
+                <button class="btn-tuvan m-0" data-bs-toggle="modal" data-bs-target="#myModal">Đặt Hàng Ngay</button>
             </div>
         </div>
     </section>
@@ -68,7 +126,7 @@
             <h2 class="tieu-de-1">Các Chương Trình Khuyến Mãi Hấp Dẫn</h2>
         </div>
         <div class="container my-big-banner">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -114,19 +172,257 @@
         </div>
     </section>
     <section class="loai-2">
-        <div>
+        <div class="my-cards">
             <img src="images/longden2.png" class="long-den-2" alt="">
             <h2 class="tieu-de-2">Các Loại Bánh Tráng</h2>
+            <div>
+                <div class="card my-card-1">
+                    <button class="btn-mua">
+                        Xem Chi Tiết
+                    </button>
+                    <img src="images/banh-trang-tron.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bánh Tráng Trộn</h5>
+                        <p class="card-text">Món Này Rất Ngon, Không Ăn Hối Hận Cả Đời!</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="old-price">100.000Đ</p>
+                            <p class="new-price">20.000Đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card my-card-2">
+                    <button class="btn-mua">
+                        Xem Chi Tiết
+                    </button>
+                    <img src="images/bnahTrangNuong.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bánh Tráng Nướng</h5>
+                        <p class="card-text">Món Này Rất Ngon, Không Ăn Hối Hận Cả Đời!</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="old-price">100.000Đ</p>
+                            <p class="new-price">20.000Đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card my-card-3">
+                    <button class="btn-mua">
+                        Xem Chi Tiết
+                    </button>
+                    <img src="images/banh-trang-cuon.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bánh Tráng Cuốn</h5>
+                        <p class="card-text">Món Này Rất Ngon, Không Ăn Hối Hận Cả Đời!</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="old-price">100.000Đ</p>
+                            <p class="new-price">20.000Đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card my-card-4">
+                    <button class="btn-mua">
+                        Xem Chi Tiết
+                    </button>
+                    <img src="images/banh-trang-dac-biet.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bánh Tráng Đặc Biệt</h5>
+                        <p class="card-text">Món Này Rất Ngon, Không Ăn Hối Hận Cả Đời!</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="old-price">100.000Đ</p>
+                            <p class="new-price">20.000Đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container">
         </div>
     </section>
     <section class="loai-3">
-        <div class="container">
-            <img src="" class="my-img-3" alt="">
+        <h2 class="tieu-de-3">Bánh Tráng Trộn</h2>
+        <div class="container row">
+            <div class="img-sp col-sm-8">
+                <img src="images/banh-trang-nuong-4.jpg" class="img-sp1" alt="">
+            </div>
+            <div class="nd-sp col-sm-4">
+                <h3 class="nd-nguyen-lieu">Nguyên Liệu</h3>
+                <ol>
+                    <li class="nd-nguyen-lieu">Bánh Tráng</li>
+                    <li class="nd-nguyen-lieu">Trứng Cút</li>
+                    <li class="nd-nguyen-lieu">Khô Bò</li>
+                    <li class="nd-nguyen-lieu">Nước SỐt Me</li>
+                    <li class="nd-nguyen-lieu">Khô gà</li>
+                    <li class="nd-nguyen-lieu">Khô Mực</li>
+                </ol>
+                <h3 class="price">Giá Bán</h3>
+                <p class="pre">1.000.000Đ</p>
+                <p class="price new-price">20.000Đ</p>
+                <button class="btn-mua-ngay" data-bs-toggle="modal" data-bs-target="#myModal">Mua Ngay</button>
+            </div>
+    </section>
+    <section class="loai-4">
+        <h2 class="tieu-de-2">Bánh Tráng Nướng</h2>
+        <div class="container row">
+            <div class="img-sp col-sm-8">
+                <img src="images/banh-trang-nuong-4.jpg" class="img-sp1" alt="">
+            </div>
+            <div class="nd-sp col-sm-4">
+                <h3 class="nd-nguyen-lieu">Nguyên Liệu</h3>
+                <ol>
+                    <li class="nd-nguyen-lieu">Bánh Tráng</li>
+                    <li class="nd-nguyen-lieu">Trứng Cút</li>
+                    <li class="nd-nguyen-lieu">Khô Bò</li>
+                    <li class="nd-nguyen-lieu">Nước SỐt Me</li>
+                    <li class="nd-nguyen-lieu">Khô gà</li>
+                    <li class="nd-nguyen-lieu">Khô Mực</li>
+                </ol>
+                <h3 class="price">Giá Bán</h3>
+                <p class="pre">1.000.000Đ</p>
+                <p class="price new-price">20.000Đ</p>
+                <button class="btn-mua-ngay" data-bs-toggle="modal" data-bs-target="#myModal">Mua Ngay</button>
+            </div>
+    </section>
+    <section class="loai-5">
+        <h2 class="tieu-de-3">Bánh Tráng Cuốn</h2>
+        <div class="container row">
+            <div class="img-sp col-sm-8">
+                <img src="images/banh-trang-nuong-4.jpg" class="img-sp1" alt="">
+            </div>
+            <div class="nd-sp col-sm-4">
+                <h3 class="nd-nguyen-lieu">Nguyên Liệu</h3>
+                <ol>
+                    <li class="nd-nguyen-lieu">Bánh Tráng</li>
+                    <li class="nd-nguyen-lieu">Trứng Cút</li>
+                    <li class="nd-nguyen-lieu">Khô Bò</li>
+                    <li class="nd-nguyen-lieu">Nước SỐt Me</li>
+                    <li class="nd-nguyen-lieu">Khô gà</li>
+                    <li class="nd-nguyen-lieu">Khô Mực</li>
+                </ol>
+                <h3 class="price">Giá Bán</h3>
+                <p class="pre">1.000.000Đ</p>
+                <p class="price new-price">20.000Đ</p>
+                <button class="btn-mua-ngay" data-bs-toggle="modal" data-bs-target="#myModal">Mua Ngay</button>
+            </div>
+    </section>
+    <section class="loai-6">
+        <h2 class="tieu-de-2">Bánh Tráng Đặc Biệt</h2>
+        <div class="container row">
+            <div class="img-sp col-sm-8">
+                <img src="images/banh-trang-nuong-4.jpg" class="img-sp1" alt="">
+            </div>
+            <div class="nd-sp col-sm-4">
+                <h3 class="nd-nguyen-lieu">Nguyên Liệu</h3>
+                <ol>
+                    <li class="nd-nguyen-lieu">Bánh Tráng</li>
+                    <li class="nd-nguyen-lieu">Trứng Cút</li>
+                    <li class="nd-nguyen-lieu">Khô Bò</li>
+                    <li class="nd-nguyen-lieu">Nước SỐt Me</li>
+                    <li class="nd-nguyen-lieu">Khô gà</li>
+                    <li class="nd-nguyen-lieu">Khô Mực</li>
+                </ol>
+                <h3 class="price">Giá Bán</h3>
+                <p class="pre">1.000.000Đ</p>
+                <p class="price new-price">20.000Đ</p>
+                <button class="btn-mua-ngay" data-bs-toggle="modal" data-bs-target="#myModal">Mua Ngay</button>
+            </div>
+    </section>
+    <section class="ly-do-nen-chon">
+        <img src="images/longden2.png" class="long-den-2" alt="">
+        <h2 class="tieu-de-4">Lý Do Bạn Nên Chọn Thương Hiệu Của Chúng Tôi</h2>
+        <div class="container row why-section">
+            <div class="col-sm-5">
+                <h4 class="tieu-de-ly-do">Nguyên Liệu Thượng Hạng <i class="fa-solid fa-check check-icon"></i></h4>
+                <p class="nd-ly-do">Nguyên liệu nhập khẩu, đảm bảo chất lượng tương đương các sản phẩm tại thị trường
+                    HongKong và Châu Á
+                </p>
+                <br>
+                <h4 class="tieu-de-ly-do2">Sang Trọng Và Tinh Tế <i class="fa-solid fa-check check-icon"></i></h4>
+                <p class="nd-ly-do2">Mẫu mã bao bì được làm mới qua từng năm với màu sắc và họa tiết tinh tế
+                </p>
+                <br>
+                <h4 class="tieu-de-ly-do">Lựa Chọn Uy Tín Hàng Đầu <i class="fa-solid fa-check check-icon"></i></h4>
+                <p class="nd-ly-do">Fresh Rice Paper đem đến những sản phẩm chất lượng cao và tạo niềm tin lâu dài với
+                    khách hàng. Sự hài lòng và cảm xúc viên mãn chính là điều quan trọng nhất với chúng tôi
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <img src="images/banh-trang-nuong.png" class="my-img-ly-do" alt="">
+            </div>
+            <div class="col-sm-5">
+                <h4 class="tieu-de-ly-do3"><i class="fa-solid fa-check check-icon"> </i>Nguyên Liệu Thượng Hạng</i></h4>
+                <p class="nd-ly-do3">Nguyên liệu nhập khẩu, đảm bảo chất lượng tương đương các sản phẩm tại thị trường
+                    HongKong và Châu Á
+                </p>
+                <br>
+                <h4 class="tieu-de-ly-do4"><i class="fa-solid fa-check check-icon"> </i>Sang Trọng Và Tinh Tế</i></h4>
+                <p class="nd-ly-do4">Mẫu mã bao bì được làm mới qua từng năm với màu sắc và họa tiết tinh tế
+                </p>
+                <br>
+                <h4 class="tieu-de-ly-do3"><i class="fa-solid fa-check check-icon"> </i>Lựa Chọn Uy Tín Hàng Đầu </i>
+                </h4>
+                <p class="nd-ly-do3">Fresh Rice Paper đem đến những sản phẩm chất lượng cao và tạo niềm tin lâu dài với
+                    khách hàng. Sự hài lòng và cảm xúc viên mãn chính là điều quan trọng nhất với chúng tôi
+                </p>
+            </div>
         </div>
     </section>
-    <button class="back-to-top"><img src="images/back-to-top.png" alt="back-to-top" class="my-img-4"></button>
+    <section class="kh">
+        <img src="images/hoa.png" alt="" class="hoa">
+        <h2 class="tieu-de-cam-nhan">Cảm nhận của khách hàng về chúng tôi</h2>
+        <div class="cau-chuyen">
+            <img src="images/ceo.jpg" alt="" class="img-ceo">
+            <h3 class="tieu-de-cau-chuyen nd-cam-nhan">Chị Trịnh Ngọc Hoa</h3>
+            <h5 class="nd-cau-chuyen nd-cam-nhan">CEO Công Ty Master Sun</h5>
+            <br>
+            <p class="nd-cam-nhan">
+                <q>Mỗi dịp lễ tết là một lần tôi thấy đau đầu vì phải tìm kiếm những món quà
+                    tặng sang
+                    trọng, độc đáo, có
+                    thể
+                    gửi gắm được chân tình của mình đến cho người thân, khách hàng và cả đồng nghiệp. Nhưng từ 2 năm
+                    nay,
+                    sau khi lựa chọn quà tặng dịp Tết trung thu sẽ là bánh của Fresh RicePaper khiến tôi thoải mái hơn
+                    hẳn,
+                    bởi
+                    những người được tặng đều phản hồi rằng, bánh trángcủa Fresh RicePaper vừa ngon, và họ rất thích.
+                    Tôi sẽ vẫn tiếp tục chọn bánh tráng của Fresh RicePaper làm quà tặng trong những năm tiếp theo.</q>
+            </p>
+        </div>
+    </section>
+    <button class="back-to-top"><img src="images/next-icon.png" alt="back-to-top" class="my-img-4"></button>
 
     <div class="big-footer">
         <footer class="my-footer">
@@ -136,12 +432,12 @@
                 </div>
 
                 <div class="col-md-5">
-                    <h3 class="ten-cty">CÔNG TY TNHH FRESH RICE PAPER</h3>
-                    <p><span><img src="images/icon-home.png" alt="icon-home" class="my-icon">Địa chỉ: 141 Điện Biên
+                    <h3 class="ten-cty mb-5">CÔNG TY TNHH FRESH RICE PAPER</h3>
+                    <p class="ms-5"><span><i class="fas fa-home me-2"></i>Địa chỉ: 141 Điện Biên
                             Phủ,HCM</span></p>
-                    <p><span><img src="images/phone.png" alt="icon-home" class="my-icon">Hotline CSKH: 0123456789</span>
+                    <p class="ms-5"><span><i class="fas fa-phone me-2"></i>Hotline CSKH: 0123456789</span>
                     </p>
-                    <p><span><img src="images/mail.png" alt="icon-home" class="my-icon">Email: group2@ASP.net</span>
+                    <p class="ms-5"><span><i class="fas fa-envelope me-2"></i>Email: group2@ASP.net</span>
                     </p>
 
                 </div>
