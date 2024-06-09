@@ -505,14 +505,27 @@ h6 {
       margin-right: 10px;
    }
 
+   body,
+   html {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+   }
+
    .home {
       margin-top: 59px;
-      height: 1009px;
+      height: 876px;
+   }
+
+   .div-img {
+      display: flex;
+      justify-content: center;
    }
 
    .myImg2 {
       width: 360px;
       height: auto;
+      margin-top: -52px !important;
    }
 
    .my-footer {
@@ -520,12 +533,18 @@ h6 {
    }
 
    .my-footer p {
-      padding-left: 40px;
+      padding: 5% 21%;
+      font-size: 105%;
    }
 
    .ten-cty {
       font-size: 18px;
-      margin: 0 0 0 35px;
+      margin: 2% 0 0 13%;
+   }
+
+   .div-ctkm {
+      display: flex;
+      justify-content: center;
    }
 
    .long-den-2 {
@@ -535,6 +554,7 @@ h6 {
    .tieu-de-1 {
       width: 401px;
       padding: 30px 70px;
+      text-align: center;
    }
 
    .my-banner-1,
@@ -558,24 +578,29 @@ h6 {
       padding: 60px 40px 40px;
       width: 440px;
       font-size: 40px !important;
+      margin: auto 5%;
    }
 
    .loai-2 {
       height: 1753px;
    }
 
+   .loai-2 .tieu-de-2 {
+      margin: auto 5%;
+   }
+
    .my-card-1,
    .my-card-2,
    .my-card-3,
    .my-card-4 {
-      margin-left: 75px;
+      margin: 0 21% 6%;
    }
 
    .loai-3,
    .loai-4,
    .loai-5,
    .loai-6 {
-      height: 984px;
+      height: 765px;
       background-size: 1px 1px;
    }
 
@@ -586,23 +611,23 @@ h6 {
 
    .loai-4,
    .loai-6 {
-      background-color: #f5dcd2;
+      background-color: #E8E8E8;
    }
 
    .img-sp1 {
-      height: 380px;
-      width: 272px;
+      height: 200px;
+      width: 350px;
       object-fit: cover;
-      margin: 0 -43px 20px;
+      margin: -28px -63px 20px;
       border-radius: 5%;
    }
 
    .nd-sp {
-      margin-left: -30px;
+      margin-left: -50px;
    }
 
    .btn-mua-ngay {
-      margin: 40px 60px;
+      margin: 40px 27%;
    }
 
    .ly-do-nen-chon {
@@ -637,11 +662,11 @@ h6 {
    }
 
    .my-img-ly-do {
-      transform: translateX(-50px) scale(1.5);
+      transform: translateX(-16%) scale(1.5);
    }
 
    .kh {
-      height: 887px;
+      height: 800px;
    }
 
    .hoa {
@@ -650,14 +675,13 @@ h6 {
 
    .img-ceo {
       float: none;
-      margin-left: 100px;
-      margin-top: -40px;
+      margin: -40px 28%;
       margin-bottom: 20px;
    }
 
    .tieu-de-cau-chuyen {
       font-size: 30px;
-      margin-left: 55px;
+      margin-left: 18%;
    }
 
    .nd-cam-nhan {
@@ -665,11 +689,27 @@ h6 {
    }
 
    h5.nd-cam-nhan {
-      margin-left: 75px;
+      margin-left: 22%;
    }
 
    p.nd-cam-nhan {
-      margin-left: 25px;
+      margin: auto 5%;
       text-align: justify;
+      width: 90%;
+   }
+
+   .modal-backdrop.show {
+      width: 100%;
+      height: 100%;
+   }
+
+   .modal-content {
+      width: 90% !important;
+      margin: 46% 0;
+   }
+
+   #myModal {
+      width: 100%;
+      margin: 5%;
    }
 }
