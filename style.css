@@ -570,7 +570,7 @@ h6 {
    }
 
    .loai-1 {
-      height: 386px;
+      height: 500px;
    }
 
    .tieu-de-2,
@@ -711,5 +711,85 @@ h6 {
    #myModal {
       width: 100%;
       margin: 5%;
+   }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1280px) {
+   .modal-backdrop.show {
+      width: 100%;
+      height: 100%;
+   }
+
+   body,
+   html {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+   }
+
+   .myImg2 {
+      margin-left: -95%;
+   }
+
+   div.carousel-caption p,
+   div.carousel-caption h5 {
+      display: none;
+   }
+
+   .tieu-de-1 {
+      padding-left: 20%;
+   }
+
+   .tieu-de-2 {
+      padding-left: 35%;
+   }
+
+   .my-card-1,
+   .my-card-2,
+   .my-card-3,
+   .my-card-4 {
+      margin: 10px 14% 10px -12%;
+   }
+
+   .my-card-4 {
+      margin-right: 0;
+   }
+
+   .tieu-de-3,
+   .tieu-de-2 {
+      padding-left: 34%;
+   }
+
+   .img-sp1 {
+      margin-left: 0%;
+   }
+
+   .tieu-de-4 {
+      padding-left: 5%;
+   }
+
+   .why-section {
+      transform: translateX(-6%);
+   }
+
+   .my-img-ly-do {
+      transform: translate(-25%, 25%);
+   }
+
+   .tieu-de-cam-nhan {
+      font-size: 4em;
+      padding-left: 0;
+   }
+
+   .img-ceo {
+      margin-left: 5%;
+   }
+
+   .nd-cam-nhan {
+      width: 95%;
+   }
+
+   .ten-cty {
+      width: 130%;
    }
 }
