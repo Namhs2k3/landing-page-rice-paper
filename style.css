@@ -616,9 +616,9 @@ h6 {
 
    .img-sp1 {
       height: 200px;
-      width: 350px;
+      width: 90%;
       object-fit: cover;
-      margin: -28px -63px 20px;
+      margin: -28px -20% 20px;
       border-radius: 5%;
    }
 
